@@ -19,9 +19,10 @@ def playGame():
         else:
             print("猜錯了")
             print(f"您已經猜了幾{count}次")
+
 while(True):
     playGame()
-    play_again = input("還要玩嗎？(y,n)")
+    play_again = input("還要玩嗎? (y,n)")
     if not (play_again == 'y'):
         break
 print("遊戲結束")
