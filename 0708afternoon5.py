@@ -4,7 +4,7 @@ import random
 
 def playGame():
     min = 1
-    max = 10
+    max = 100
     count = 0
     target = random.randint(min, max)
     print("=======猜數字遊戲=======\n\n")
@@ -16,9 +16,13 @@ def playGame():
             print(f"Bingo!猜對了, 答案是:{target}")
             print(f"您共猜了{count}次")
             break
-        else:
-            print("猜錯了")
-            print(f"您已經猜了幾{count}次")
+        elif keyin > target:
+            print("再小一點")
+            max = keyin - 1
+        elif keyin < target:
+            print("再大一點")
+            min = keyin + 1
+        print(f"您已經猜了幾{count}次")
 
 while(True):
     playGame()
