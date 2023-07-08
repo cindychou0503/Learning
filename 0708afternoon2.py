@@ -12,7 +12,7 @@ while True:
     count += 1
     if(keyin == target):
         print(f"Bingo！猜對了，答案是:{target}")
-        print(f"您共猜了幾{count}次")
+        print(f"您共猜了{count}次")
         break
     else:
         print("猜錯了")
