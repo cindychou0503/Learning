@@ -13,16 +13,16 @@ def playGame():
         keyin = int(input(f"猜數字範圍{min}~{max}:"))
         count += 1
         if(keyin == target):
-            print(f"Bingo！猜對了，答案是:{target}")
+            print(f"Bingo!猜對了, 答案是:{target}")
             print(f"您共猜了{count}次")
             break
         else:
             print("猜錯了")
             print(f"您已經猜了幾{count}次")
-while(True)
+while(True):
     playGame()
     play_again = input("還要玩嗎？(y,n)")
-    if not (play_again == 'y')
+    if not (play_again == 'y'):
         break
 print("遊戲結束")
 
